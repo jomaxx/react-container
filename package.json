@@ -14,26 +14,26 @@
     "url": "https://github.com/jomaxx/react-container/issues"
   },
   "homepage": "https://github.com/jomaxx/react-container#readme",
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "scripts": {
     "start": "NODE_ENV=development rollup -c --watch",
     "prebuild": "rm -rf lib",
     "build": "NODE_ENV=production rollup -c",
-    "prepublishOnly": "yarn build"
+    "test": "NODE_ENV=test jest",
+    "prepublishOnly": "yarn build && yarn test"
   },
   "babel": {
-    "presets": [
-      "./.babelrc.js"
-    ]
+    "presets": ["./.babelrc.js"]
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-react-app": "^3.1.1",
     "babel-runtime": "^6.23.0",
+    "jest": "^22.4.3",
     "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-testing-library": "^3.0.1",
     "rollup": "^0.58.2",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-node-resolve": "^3.3.0"

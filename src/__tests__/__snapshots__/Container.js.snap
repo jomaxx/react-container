@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`consumes container 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "setState": [Function],
+        "state": Object {},
+      },
+    ],
+  ],
+}
+`;
+
+exports[`renders container 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "setState": [Function],
+        "state": Object {},
+      },
+    ],
+  ],
+}
+`;
+
+exports[`sets state 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "setState": [Function],
+        "state": Object {},
+      },
+    ],
+    Array [
+      Object {
+        "setState": [Function],
+        "state": Object {
+          "done": true,
+        },
+      },
+    ],
+  ],
+}
+`;
