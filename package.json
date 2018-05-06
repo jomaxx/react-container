@@ -1,6 +1,6 @@
 {
   "name": "@jomaxx/react-container",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
   "license": "MIT",
@@ -14,7 +14,9 @@
     "url": "https://github.com/jomaxx/react-container/issues"
   },
   "homepage": "https://github.com/jomaxx/react-container#readme",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "start": "NODE_ENV=development rollup -c --watch",
     "prebuild": "rm -rf lib",
@@ -22,7 +24,9 @@
     "prepublishOnly": "yarn build"
   },
   "babel": {
-    "presets": ["./.babelrc.js"]
+    "presets": [
+      "./.babelrc.js"
+    ]
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
