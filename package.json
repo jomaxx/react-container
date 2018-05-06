@@ -1,0 +1,41 @@
+{
+  "name": "@jomaxx/react-container",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "license": "MIT",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomaxx/react-container.git"
+  },
+  "author": "Jo Maxx <jo.maxx.blake@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/jomaxx/react-container/issues"
+  },
+  "homepage": "https://github.com/jomaxx/react-container#readme",
+  "files": ["lib"],
+  "scripts": {
+    "start": "NODE_ENV=development rollup -c --watch",
+    "prebuild": "rm -rf lib",
+    "build": "NODE_ENV=production rollup -c",
+    "prepublishOnly": "yarn build"
+  },
+  "babel": {
+    "presets": ["./.babelrc.js"]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-react-app": "^3.1.1",
+    "babel-runtime": "^6.23.0",
+    "react": "^16.3.2",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.3.2"
+  }
+}
